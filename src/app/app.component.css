@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.site-title{
+    cursor: pointer;
+}
+
+.ingredient-search{
+    background-color: var(--text);
+    border: 1px solid var(--text);
+    color: var(--background);
+    font-size: 1.2rem;
+}
+
+.filter-search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#searchItem{
+    border: 1px solid var(--text);
+    height: 1.7rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--text);
+    color: var(--background);
+  padding: 1rem;
+  }
+  
+  .header-break{
+    border: 0.3px solid var(--background);
+    width: 100%;
+  }
+
+ main{
+    overflow: hidden;
+ }

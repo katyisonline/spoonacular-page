@@ -1,0 +1,30 @@
+<main>
+  <header>
+    <h1 (click)="returnToHome()" class="site-title">spoonacular recipes</h1>
+    <hr class="header-break">
+
+    <div class="filter-search">
+      
+      <div class="filter">
+        <!-- <app-filter-list></app-filter-list> -->
+      </div>
+
+        <div class="search">
+          <input type="text" id="searchItem" placeholder="search by ingredient"><button value="submit" class="ingredient-search">submit</button>
+        </div>
+
+        
+
+    
+    </div>
+  </header>
+  <div class="container">
+
+    <section class="content">
+      <router-outlet></router-outlet>
+      <app-pagnation></app-pagnation>
+    </section>
+    
+  </div>
+  <app-footer></app-footer>
+</main>

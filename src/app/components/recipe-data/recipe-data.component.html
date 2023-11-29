@@ -1,0 +1,43 @@
+<div *ngIf="recipeData" class="recipe-data-output">
+  <div class="recipe-header">
+    <h1 class="recipe-title">{{ recipeData.title }}</h1>
+    <div class="recipe-image-container">
+      <img
+        src="{{ recipeData.image }}"
+        alt="{{ recipeData.title }}"
+        class="recipe-image"
+      />
+    </div>
+  </div>
+
+  <div class="text-output">
+    <div>
+      <h2>TOTAL TIME</h2>
+      <p>{{ readyIn }} minutes</p>
+  
+    </div>
+    <p [innerHTML]="recipeData.summary"></p>
+
+    <div class="ingredients-instructions">
+      <div class="ingredients">
+        <h2>Ingredients</h2>
+        <h3>Serves {{ servings }}</h3>
+        <ul class="ingredient-list">
+          <div *ngFor="let ingredient of ingredients">
+            <li>
+              {{ ingredient.amount }}
+              {{ ingredient.unit }}
+              {{ ingredient.name }}
+            </li>
+          </div>
+        </ul>
+      </div>
+      <hr />
+      <div class="instructions">
+        <h2>Instructions</h2>
+        <div [innerHTML]="instructions" class="ordered-list"></div>
+      </div>
+    </div>
+  </div>
+  <!-- <p [innerHTML]="recipeData.diets"></p> -->
+</div>

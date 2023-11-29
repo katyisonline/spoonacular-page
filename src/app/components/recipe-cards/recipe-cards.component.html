@@ -1,0 +1,13 @@
+<div *ngIf="recipes" class="recipe-output">
+  <div class="card" *ngFor="let recipe of recipes">
+    <div (click)="onRecipeClick(recipe.id)">
+      <div class="recipe-card">
+        <img [src]="recipe.image" alt="{{ recipe.title }}" class="recipe-pic" />
+        <div class="card-content">
+          <h2 class="recipe-title">{{ recipe.title }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- </div> -->
