@@ -1,0 +1,22 @@
+<header>
+  <h1 (click)="returnToHome()" class="site-title">spoonacular recipes</h1>
+  <link rel="icon" type="image/x-icon" href="../../../assets/favicon.ico" />
+  <hr />
+  <div class="filter-search">
+    <div class="filter">
+      <h2 (click)="openDropdown()" class="filter-by">Diets</h2>
+      <div class="dropdown"  [class.hidden]="isVisible == false">
+        <li><a href="#">Vegetarian</a></li>
+        <li><a href="#">Vegan</a></li>
+      </div>
+    </div>
+
+    <div class="search">
+      <input
+        type="text"
+        id="searchItem"
+        placeholder="search by ingredient"
+      /><button value="submit" class="ingredient-search">submit</button>
+    </div>
+  </div>
+</header>

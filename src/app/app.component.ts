@@ -8,9 +8,4 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'recipe-search';
 
-  constructor(private router: Router) { }
-
-  returnToHome(){
-    this.router.navigate([''])
-  }
 }

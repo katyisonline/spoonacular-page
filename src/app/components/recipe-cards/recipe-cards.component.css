@@ -1,28 +1,34 @@
-.card {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
 .recipe-output {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  padding: 1rem;
+  gap: 1.58rem;
+  padding: 1rem 0rem;
   justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  border: solid 1px black;
 }
 
 .card-content {
   display: flex;
   flex-direction: column;
+  padding: 0 1rem;
+}
+
+.image-container {
+  width: 100%;
 }
 
 .recipe-pic {
-
-  object-fit:cover;
+  height: auto;
+  width: 100%;
 }
 
-.card-content:hover {
+.recipe-card:hover {
   cursor: pointer;
 }
 
@@ -30,8 +36,6 @@
   text-decoration: underline;
 }
 
-.recipe-card{
+.recipe-card {
   min-width: 0;
-  border: solid 1px black
-
 }
